@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gold: #C9A84C;
+  --gold-light: #F0D080;
+  --gold-dark: #8B6914;
+  --black: #0A0A0A;
+  --charcoal: #141414;
+  --card-bg: #1A1A1A;
+  --white: #FAFAFA;
+  --grey: #888888;
+  --green-wa: #25D366;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: #0A0A0A;
+  color: #FAFAFA;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+}
+
+.gold-text {
+  background: linear-gradient(135deg, #C9A84C, #F0D080, #C9A84C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gold-divider {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(90deg, #C9A84C, #F0D080);
+  margin: 12px 0 20px 0;
+}
+
+.section-label {
+  color: #C9A84C;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-family: 'Inter', sans-serif;
+}
+
+.gold-card {
+  background: #1A1A1A;
+  border: 1px solid rgba(201, 168, 76, 0.15);
+  border-top: 3px solid #C9A84C;
+  border-radius: 12px;
+  padding: 32px 28px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gold-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 60px rgba(201, 168, 76, 0.2);
+  border-color: rgba(201, 168, 76, 0.5);
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, #C9A84C, #F0D080);
+  color: #0A0A0A;
+  font-weight: 700;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s, transform 0.3s;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-gold:hover {
+  opacity: 0.85;
+  transform: scale(1.03);
+  box-shadow: 0 0 30px rgba(201, 168, 76, 0.4);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #C9A84C;
+  border: 2px solid #C9A84C;
+  font-weight: 600;
+  padding: 12px 32px;
+  border-radius: 50px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-outline:hover {
+  background: rgba(201, 168, 76, 0.1);
+}
