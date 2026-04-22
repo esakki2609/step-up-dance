@@ -46,7 +46,20 @@ export default function Navbar() {
       <div className="flex items-center justify-between">
         {/* Left: Logo */}
         <Link href="/" className="flex items-center">
-          <img src="/images/logo/step-up-dance-logo.jpeg" className="h-[60px] w-auto object-contain" alt="Step Up Dance Academy Logo" />
+          <motion.img 
+            src="/images/logo/step-up-dance-logo.jpeg" 
+            className="h-[70px] w-[70px] object-cover rounded-full mix-blend-screen" 
+            style={{ filter: 'brightness(1.2) contrast(1.2)' }}
+            alt="Step Up Dance Academy Logo" 
+            animate={{ 
+              rotate: 360,
+              boxShadow: ['0px 0px 0px rgba(37,211,102,0)', '0px 0px 20px rgba(37,211,102,0.5)', '0px 0px 0px rgba(37,211,102,0)']
+            }}
+            transition={{ 
+              rotate: { duration: 10, repeat: Infinity, ease: "linear" },
+              boxShadow: { duration: 3, repeat: Infinity, ease: "easeInOut" }
+            }}
+          />
         </Link>
 
         {/* Center: Desktop Nav Links */}

@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function AdultPrograms() {
   const benefits = [
-    { title: '🔥 Fitness & Weight Loss', desc: 'Dance burns 400–600 calories per hour. Get fit while having fun and expressing yourself.' },
+    { title: '🔥 Learn Trendy Dance', desc: 'Master the latest commercial choreography and street styles. Stay ahead of the viral trends.' },
     { title: '🧠 Mental Wellness', desc: 'Reduces stress, boosts dopamine, sharpens focus and memory. Dance is therapy in motion.' },
     { title: '🌟 Stage Confidence', desc: 'Perform at real academy events alongside students of all ages. Your stage is waiting.' }
   ]

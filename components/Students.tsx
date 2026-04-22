@@ -22,7 +22,8 @@ export default function Students() {
     { label: 'Stage Ready', sub: 'Born to Perform', src: '/images/students/students dance three.jpeg' },
     { label: 'Confident', sub: 'Finding the Beat', src: '/images/students/students dance four.jpeg' },
     { label: 'Excellence', sub: 'Every Step Counts', src: '/images/students/students dance five.jpeg' },
-    { label: 'Future Star', sub: 'Just Getting Started', src: '/images/students/with students two.jpeg' }
+    { label: 'Future Star', sub: 'Just Getting Started', src: '/images/students/with students two.jpeg' },
+    { label: 'Spotlight', sub: 'Owning The Stage', src: '/images/students/students dance six.jpeg' }
   ]
 
   return (
@@ -34,7 +35,7 @@ export default function Students() {
         </h2>
       </div>
 
-      <div className="max-w-[1400px] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+      <div className="max-w-[1400px] mx-auto flex overflow-x-auto gap-6 snap-x snap-mandatory hide-scrollbar pb-8 pt-4 md:grid md:grid-cols-3 lg:grid-cols-3">
         {students.map((student, i) => (
           <motion.div
             key={i}
@@ -42,7 +43,7 @@ export default function Students() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: i * 0.1 }}
-            className="group relative overflow-hidden rounded-[12px] aspect-[3/4] cursor-pointer"
+            className="flex-shrink-0 w-[85vw] sm:w-[60vw] md:w-auto group relative overflow-hidden rounded-[16px] aspect-[3/4] cursor-pointer snap-center"
           >
             <img
               src={student.src}
@@ -61,6 +62,11 @@ export default function Students() {
           </motion.div>
         ))}
       </div>
+      <style dangerouslySetInnerHTML={{__html: `
+        .hide-scrollbar::-webkit-scrollbar {
+          display: none;
+        }
+      `}} />
     </section>
   )
 }

@@ -15,12 +15,12 @@ import Link from 'next/link'
 
 export default function Hero() {
   return (
-    <section className="relative h-screen min-h-[600px] flex items-center overflow-hidden w-full">
+    <section className="relative min-h-screen pt-[120px] pb-[60px] md:pt-[150px] flex items-center overflow-hidden w-full">
       {/* Background Layers */}
       <div className="absolute inset-0 w-full h-full">
         {/* Layer 1: Image Placeholder */}
         <img
-          src="/images/students/students danceone.jpeg"
+          src="/images/hero_dance_crew.png"
           alt="Hero Background"
           className="w-full h-full object-cover"
         />
@@ -29,7 +29,7 @@ export default function Hero() {
         <div 
           className="absolute inset-0"
           style={{
-            background: 'linear-gradient(to bottom, rgba(10,10,10,0.4) 0%, rgba(10,10,10,0.65) 50%, rgba(10,10,10,0.95) 100%)'
+            background: 'linear-gradient(to bottom, rgba(10,10,10,0.5) 0%, rgba(10,10,10,0.7) 50%, rgba(10,10,10,0.95) 100%)'
           }}
         />
 
@@ -43,7 +43,7 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 px-6 pt-24 pb-16 lg:px-[8%] max-w-[700px]">
+      <div className="relative z-10 px-6 lg:px-[8%] max-w-[700px] mt-8 md:mt-0">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

@@ -17,6 +17,7 @@ export default function Gallery() {
     { id: 15, type: 'Kids', src: '/images/students/with students one.jpeg' },
     { id: 16, type: 'Kids', src: '/images/students/with students three.jpeg' },
     { id: 17, type: 'Kids', src: '/images/students/with students.jpeg' },
+    { id: 18, type: 'Kids', src: '/images/students/students dance six.jpeg' },
   ]
 
   const filteredItems = activeFilter === 'All' ? items : items.filter(item => item.type === activeFilter)
@@ -84,7 +85,7 @@ export default function Gallery() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.4 }}
-                className="flex-shrink-0 w-[300px] sm:w-[350px] md:w-[400px] lg:w-[450px] aspect-[4/5] relative rounded-[16px] overflow-hidden snap-center cursor-pointer bg-[#1A1A1A] border border-[#c9a84c1a]"
+                className="flex-shrink-0 w-[85vw] sm:w-[60vw] md:w-[400px] lg:w-[450px] aspect-[4/5] relative rounded-[16px] overflow-hidden snap-center cursor-pointer bg-[#1A1A1A] border border-[#c9a84c1a]"
               >
                 <img
                   src={item.src}

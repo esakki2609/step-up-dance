@@ -17,7 +17,7 @@ export default function Footer() {
         {/* Column 1 - Brand */}
         <div>
             <div className="mb-6">
-              <img src="/images/logo/step-up-dance-logo.jpeg" className="h-[60px] w-auto object-contain" alt="Step Up Dance Academy Logo" />
+              <img src="/images/logo/step-up-dance-logo.jpeg" className="h-[70px] w-[70px] object-cover rounded-full mix-blend-screen" style={{ filter: 'brightness(1.2) contrast(1.2)' }} alt="Step Up Dance Academy Logo" />
             </div>
           <p className="text-[#888] text-[14px] leading-[1.6] mb-6">
             Train with Passion. Perform with Pride. Shine.
