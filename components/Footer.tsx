@@ -16,12 +16,9 @@ export default function Footer() {
       <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         {/* Column 1 - Brand */}
         <div>
-          <div className="mb-6">
-            <div className="text-[#C9A84C] font-['Playfair_Display'] text-[24px] font-bold uppercase">
-              STEP UP
+            <div className="mb-6">
+              <img src="/images/logo/step-up-dance-logo.jpeg" className="h-[60px] w-auto object-contain" alt="Step Up Dance Academy Logo" />
             </div>
-            {/* Replace with: <Image src="/images/logo-stepup.png" width={100} height={50} alt="Logo" /> */}
-          </div>
           <p className="text-[#888] text-[14px] leading-[1.6] mb-6">
             Train with Passion. Perform with Pride. Shine.
           </p>
@@ -42,13 +39,18 @@ export default function Footer() {
         <div>
           <h4 className="text-[#FAFAFA] font-bold tracking-[1px] uppercase text-[13px] mb-6">QUICK LINKS</h4>
           <ul className="space-y-3">
-            {['About', 'Programs', 'Students', 'Recognition', 'Gallery', 'Join Now'].map(link => (
-              <li key={link}>
-                <Link href={`#${link.toLowerCase().replace(' ', '')}`} className="text-[#888] text-[14px] hover:text-[#C9A84C] transition-colors">
-                  {link}
-                </Link>
-              </li>
-            ))}
+            {['About', 'Programs', 'Certificates', 'Celebrities', 'Gallery', 'Join Now'].map(link => {
+              const href = link === 'Certificates' || link === 'Celebrities' 
+                ? `/${link.toLowerCase()}` 
+                : `/#${link.toLowerCase().replace(' ', '')}`
+              return (
+                <li key={link}>
+                  <Link href={href} className="text-[#888] text-[14px] hover:text-[#C9A84C] transition-colors">
+                    {link}
+                  </Link>
+                </li>
+              )
+            })}
           </ul>
         </div>
 
@@ -56,7 +58,7 @@ export default function Footer() {
         <div>
           <h4 className="text-[#FAFAFA] font-bold tracking-[1px] uppercase text-[13px] mb-6">PROGRAMS</h4>
           <ul className="space-y-3">
-            {['Classical Dance', 'Bollywood', 'Hip-Hop', 'Adult Classes', 'Yoga', 'Stage'].map(link => (
+            {['Trendy Dance', 'Bollywood', 'Hip-Hop', 'Adult Classes', 'Commercial', 'Stage'].map(link => (
               <li key={link}>
                 <Link href="#programs" className="text-[#888] text-[14px] hover:text-[#C9A84C] transition-colors">
                   {link}

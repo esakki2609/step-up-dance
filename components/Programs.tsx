@@ -7,20 +7,20 @@ export default function Programs() {
   const [activeTab, setActiveTab] = useState<'children' | 'adults'>('children')
 
   const childrenPrograms = [
-    { title: 'Classical Dance', age: 'Ages 4–12', desc: 'Bharatnatyam and Kuchipudi with traditional discipline and artistry' },
+    { title: 'Trendy Dance', age: 'Ages 4–12', desc: 'Latest viral trends, commercial moves, and street styles taught with high energy' },
     { title: 'Bollywood Kids', age: 'Ages 5–14', desc: 'High-energy routines, expressive choreography, fully stage-ready' },
     { title: 'Hip Hop Juniors', age: 'Ages 6–15', desc: 'Street style, rhythm, coordination and freestyle fundamentals' },
     { title: 'Tiny Tots', age: 'Ages 3–5', desc: 'Music, movement and motor skill development through dance' },
-    { title: 'Yoga for Kids', age: 'Ages 4–12', desc: 'Flexibility, focus, breathing and mindfulness through yoga' },
+    { title: 'Commercial Kids', age: 'Ages 4–12', desc: 'Industry-style choreography focusing on performance and musicality' },
     { title: 'Stage Performance', age: 'Ages 5–15', desc: 'Train for real events, competitions and public performances' }
   ]
 
   const adultPrograms = [
     { title: 'Bollywood for Adults', age: 'Ages 18+', desc: 'Fitness and fun through high-energy Bollywood choreography' },
     { title: 'Contemporary Dance', age: 'Ages 16+', desc: 'Expressive modern movement and technical body control' },
-    { title: 'Classical for Adults', age: 'Ages 18+', desc: 'It is never too late — Bharatnatyam from the ground up' },
+    { title: 'Trendy for Adults', age: 'Ages 18+', desc: 'Master the latest viral and commercial routines in a fun environment' },
     { title: 'Fitness Dance', age: 'Ages 18+', desc: 'Cardio-focused routines — zero prior experience needed' },
-    { title: 'Yoga & Mindfulness', age: 'All Ages', desc: 'Stress relief, flexibility and mental wellness through yoga' },
+    { title: 'Commercial Dance', age: 'All Ages', desc: 'Industry-standard choreography to hit songs, perfect for building style' },
     { title: 'Stage Prep', age: 'Ages 16+', desc: 'Choreography, confidence and live stage performance training' }
   ]
 

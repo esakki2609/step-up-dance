@@ -20,11 +20,10 @@ export default function Hero() {
       <div className="absolute inset-0 w-full h-full">
         {/* Layer 1: Image Placeholder */}
         <img
-          src="https://placehold.co/1920x1080/0A0A0A/C9A84C?text=Hero+Image"
+          src="/images/students/students danceone.jpeg"
           alt="Hero Background"
           className="w-full h-full object-cover"
         />
-        {/* Replace with: <Image src="/images/hero.jpg" fill className="object-cover" alt="Hero" /> */}
 
         {/* Layer 2: Linear Gradient */}
         <div 

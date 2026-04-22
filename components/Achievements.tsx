@@ -23,11 +23,10 @@ export default function Achievements() {
     <section className="relative min-h-[500px] w-full flex items-center overflow-hidden">
       {/* Background */}
       <img
-        src="https://placehold.co/1920x700/0A0A0A/C9A84C?text=Award+Stage"
+        src="/images/certificates/world-record-certificate.jpeg"
         style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
         alt="Award Stage Background"
       />
-      {/* Replace with: <Image src="/images/award-stage.jpg" fill className="object-cover" alt="Award Stage" /> */}
       
       {/* Overlay */}
       <div className="absolute inset-0 bg-[#0a0a0acc]" />

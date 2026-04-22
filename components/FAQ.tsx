@@ -5,12 +5,12 @@ import { motion, AnimatePresence } from 'framer-motion'
 
 export default function FAQ() {
   const faqs = [
-    { q: 'Do you offer dance classes for adult beginners?', a: 'Yes. We offer dedicated adult beginner batches in Bollywood, Contemporary, Classical and Fitness Dance. No prior experience needed.' },
+    { q: 'Do you offer dance classes for adult beginners?', a: 'Yes. We offer dedicated adult beginner batches in Trendy, Bollywood, Contemporary, and Fitness Dance. No prior experience needed.' },
     { q: 'What is the minimum age to join?', a: 'We accept students from age 3 in our Tiny Tots program.' },
     { q: 'Do adults get to perform on stage?', a: 'Absolutely. Adults participate in annual events, recitals and special performances alongside all students.' },
     { q: 'How long to learn Bollywood dance?', a: 'Most students become stage-ready within 3–6 months of regular practice.' },
     { q: 'Do you offer free trial classes?', a: 'Yes — your first class is completely free. Book via our form or WhatsApp.' },
-    { q: 'What dance styles do you teach?', a: 'Classical, Bollywood, Hip-Hop, Contemporary, Fitness Dance and Yoga — for all ages from 3 to adult.' },
+    { q: 'What dance styles do you teach?', a: 'Trendy Dance, Commercial, Bollywood, Hip-Hop, Contemporary, and Fitness Dance — for all ages from 3 to adult.' },
     { q: 'Is dance good for fitness and weight loss?', a: 'Yes. Dance burns 400–600 calories per hour and improves cardiovascular health, flexibility and muscle tone.' },
     { q: 'Are children and adult batches separate?', a: 'Yes. All batches are completely separate with age-appropriate content and teaching styles.' }
   ]

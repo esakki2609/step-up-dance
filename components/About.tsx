@@ -14,8 +14,8 @@ import { motion } from 'framer-motion'
 
 export default function About() {
   const features = [
-    { title: '💃 Dance Training', desc: 'Classical, Bollywood, Hip-Hop mastered with discipline' },
-    { title: '🧘 Fitness & Yoga', desc: 'Body conditioning and mindfulness every session' },
+    { title: '💃 Trendy Dance Training', desc: 'Commercial, Bollywood, and Hip-Hop mastered with style and energy' },
+    { title: '🔥 High-Energy Fitness', desc: 'Body conditioning, rhythm, and intense cardio every session' },
     { title: '🎭 Stage Performance', desc: 'Real stage exposure and performance confidence' },
     { title: '🌟 Personality Dev', desc: 'Poise, communication, and confidence building' },
     { title: '👑 Celebrity Exposure', desc: 'Train near industry professionals and icons' },
@@ -61,11 +61,10 @@ export default function About() {
           className="lg:w-[45%] w-full"
         >
           <img
-            src="https://placehold.co/600x700/1A1A1A/C9A84C?text=Trainer"
+            src="/images/celebrities/with-celebrity-one.jpeg"
             alt="Trainer"
             className="w-full h-auto object-cover rounded-[16px] border-2 border-[#c9a84c4d] shadow-[0_0_60px_rgba(201,168,76,0.15)]"
           />
-          {/* Replace with: <Image src="/images/trainer-portrait.jpg" width={600} height={700} className="..." alt="Trainer" /> */}
         </motion.div>
       </div>
     </section>

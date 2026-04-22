@@ -18,11 +18,11 @@ import { motion } from 'framer-motion'
 
 export default function Students() {
   const students = [
-    { label: 'Rising Star', sub: 'Passion Ignited', imgId: 1 },
-    { label: 'Stage Ready', sub: 'Born to Perform', imgId: 2 },
-    { label: 'Confident', sub: 'Finding the Beat', imgId: 3 },
-    { label: 'Excellence', sub: 'Every Step Counts', imgId: 4 },
-    { label: 'Future Star', sub: 'Just Getting Started', imgId: 5 }
+    { label: 'Rising Star', sub: 'Passion Ignited', src: '/images/students/students dance two.jpeg' },
+    { label: 'Stage Ready', sub: 'Born to Perform', src: '/images/students/students dance three.jpeg' },
+    { label: 'Confident', sub: 'Finding the Beat', src: '/images/students/students dance four.jpeg' },
+    { label: 'Excellence', sub: 'Every Step Counts', src: '/images/students/students dance five.jpeg' },
+    { label: 'Future Star', sub: 'Just Getting Started', src: '/images/students/with students two.jpeg' }
   ]
 
   return (
@@ -45,11 +45,10 @@ export default function Students() {
             className="group relative overflow-hidden rounded-[12px] aspect-[3/4] cursor-pointer"
           >
             <img
-              src={`https://placehold.co/400x533/1A1A1A/C9A84C?text=Student+${student.imgId}`}
-              alt={`Student ${student.imgId}`}
+              src={student.src}
+              alt={`Student ${i}`}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-108 group-hover:border-2 group-hover:border-[#c9a84c80]"
             />
-            {/* Replace with: <Image src={`/images/student-${student.imgId}.jpg`} fill className="..." alt="..." /> */}
             
             <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0af2] to-transparent bg-[length:100%_55%] bg-bottom bg-no-repeat flex flex-col justify-end p-4 transition-all duration-300">
               <h3 className="text-[#C9A84C] text-[12px] tracking-[2px] uppercase font-bold mb-1">

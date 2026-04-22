@@ -27,12 +27,12 @@ export default function Navbar() {
   }, [])
 
   const navLinks = [
-    { name: 'About', href: '#about' },
-    { name: 'Programs', href: '#programs' },
-    { name: 'Students', href: '#students' },
-    { name: 'Recognition', href: '#recognition' },
-    { name: 'Gallery', href: '#gallery' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'About', href: '/#about' },
+    { name: 'Programs', href: '/#programs' },
+    { name: 'Certificates', href: '/certificates' },
+    { name: 'Celebrities', href: '/celebrities' },
+    { name: 'Gallery', href: '/#gallery' },
+    { name: 'Contact', href: '/#contact' },
   ]
 
   return (
@@ -46,10 +46,7 @@ export default function Navbar() {
       <div className="flex items-center justify-between">
         {/* Left: Logo */}
         <Link href="/" className="flex items-center">
-          <div className="w-[80px] h-[40px] bg-white flex items-center justify-center text-black text-xs font-bold text-center">
-            STEP UP LOGO
-          </div>
-          {/* Replace with: <Image src="/images/logo-stepup.png" width={80} height={40} alt="Logo" /> */}
+          <img src="/images/logo/step-up-dance-logo.jpeg" className="h-[60px] w-auto object-contain" alt="Step Up Dance Academy Logo" />
         </Link>
 
         {/* Center: Desktop Nav Links */}

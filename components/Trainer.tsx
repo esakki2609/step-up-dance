@@ -33,11 +33,10 @@ export default function Trainer() {
           className="w-full lg:w-1/2 flex justify-center lg:justify-start"
         >
           <img
-            src="https://placehold.co/500x600/1A1A1A/C9A84C?text=Lead+Trainer"
-            alt="Lead Trainer"
-            className="w-full max-w-[500px] rounded-[16px] border-2 border-[#c9a84c4d] shadow-[0_0_60px_rgba(201,168,76,0.15)] object-cover"
+            src="/images/celebrities/with prabhu deva.jpeg"
+            alt="Lead Trainer Prabhu Deva"
+            className="w-full max-w-[500px] rounded-[16px] border-[4px] border-[#C9A84C] shadow-[0_0_100px_rgba(37,211,102,0.4)] object-cover transform transition-transform hover:scale-105"
           />
-          {/* Replace with: <Image src="/images/trainer-portrait.jpg" width={500} height={600} className="..." alt="..." /> */}
         </motion.div>
 
         {/* Right: Content */}

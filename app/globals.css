@@ -31,7 +31,7 @@ h1, h2, h3, h4 {
 }
 
 .gold-text {
-  background: linear-gradient(135deg, #C9A84C, #F0D080, #C9A84C);
+  background: linear-gradient(135deg, #C9A84C, #25D366, #F0D080);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -40,7 +40,7 @@ h1, h2, h3, h4 {
 .gold-divider {
   width: 60px;
   height: 2px;
-  background: linear-gradient(90deg, #C9A84C, #F0D080);
+  background: linear-gradient(90deg, #C9A84C, #25D366);
   margin: 12px 0 20px 0;
 }
 
@@ -70,7 +70,7 @@ h1, h2, h3, h4 {
 }
 
 .btn-gold {
-  background: linear-gradient(135deg, #C9A84C, #F0D080);
+  background: linear-gradient(135deg, #C9A84C, #25D366);
   color: #0A0A0A;
   font-weight: 700;
   padding: 14px 32px;
@@ -93,8 +93,8 @@ h1, h2, h3, h4 {
 
 .btn-outline {
   background: transparent;
-  color: #C9A84C;
-  border: 2px solid #C9A84C;
+  color: #25D366;
+  border: 2px solid #25D366;
   font-weight: 600;
   padding: 12px 32px;
   border-radius: 50px;
@@ -106,5 +106,5 @@ h1, h2, h3, h4 {
 }
 
 .btn-outline:hover {
-  background: rgba(201, 168, 76, 0.1);
+  background: rgba(37, 211, 102, 0.1);
 }

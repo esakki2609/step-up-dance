@@ -18,11 +18,10 @@ export default function CelebritySection() {
     <section id="recognition" className="relative min-h-[600px] w-full flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <img 
-        src="https://placehold.co/1920x800/0A0A0A/C9A84C?text=Celebrity+Photo"
+        src="/images/celebrities/with celebrity two.jpeg"
         style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
         alt="Celebrity Feature"
       />
-      {/* Replace with: <Image src="/images/featured-sitting-celebrity.jpg" fill className="object-cover" alt="Celebrity" /> */}
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-[#0a0a0ac7]" />

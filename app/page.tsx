@@ -19,13 +19,12 @@ export default function Home() {
     <main>
       <Navbar />
       <Hero />
+      <Trainer />
       <About />
       <Programs />
       <AdultPrograms />
       <WhyUs />
       <Students />
-      <CelebritySection />
-      <Trainer />
       <Achievements />
       <Gallery />
       <Testimonials />
