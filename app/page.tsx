@@ -19,10 +19,9 @@ export default function Home() {
     <main>
       <Navbar />
       <Hero />
-      <Trainer />
       <About />
+      <Trainer />
       <Programs />
-      <AdultPrograms />
       <WhyUs />
       <Students />
       <Achievements />
