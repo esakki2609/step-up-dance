@@ -34,13 +34,13 @@ export default function CallToAction() {
               Sivanthipatti, Tirunelveli-627011, Tamil Nadu
             </p>
             <p className="text-[#C9A84C] text-[18px] font-bold tracking-[1px] mb-2">
-              📞 +91 6383788537
+              📞 +91 99521 62600
             </p>
           </div>
 
           <div className="flex justify-center w-full">
             <a 
-              href="https://wa.me/916383788537" 
+              href="https://wa.me/919952162600" 
               target="_blank"
               rel="noopener noreferrer"
               className="w-full md:w-auto flex items-center justify-center gap-3 bg-[#25D366] text-[#FAFAFA] font-bold py-[16px] px-[40px] rounded-[50px] text-[15px] tracking-[1px] uppercase transition-all hover:opacity-85 hover:scale-[1.03] shadow-[0_0_20px_rgba(37,211,102,0.2)]"

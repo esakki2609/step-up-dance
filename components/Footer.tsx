@@ -86,14 +86,14 @@ export default function Footer() {
             </li>
             <li className="flex gap-3 text-[#888] text-[14px] leading-[1.6]">
               <span className="text-[#C9A84C]">📞</span>
-              <span>+91 6383788537</span>
+              <span>+91 99521 62600</span>
             </li>
             <li className="flex gap-3 text-[#888] text-[14px] leading-[1.6]">
               <span className="text-[#C9A84C]">📧</span>
               <span>info@stepupdanceacademy.com</span>
             </li>
             <li>
-              <a href="https://wa.me/916383788537" target="_blank" rel="noopener noreferrer" className="text-[#25D366] text-[14px] font-medium hover:underline flex items-center gap-2 mt-2">
+              <a href="https://wa.me/919952162600" target="_blank" rel="noopener noreferrer" className="text-[#25D366] text-[14px] font-medium hover:underline flex items-center gap-2 mt-2">
                 WhatsApp Us
               </a>
             </li>

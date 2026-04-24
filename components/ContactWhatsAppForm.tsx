@@ -2,7 +2,7 @@
 
 import { FormEvent, useState } from 'react'
 
-const WHATSAPP_NUMBER = '916383788537'
+const WHATSAPP_NUMBER = '919952162600'
 
 export default function ContactWhatsAppForm() {
   const [name, setName] = useState('')

@@ -150,6 +150,10 @@ export default function Home() {
               fill
               className="object-cover"
             />
+            <div className="absolute inset-x-0 bottom-0 p-4 md:p-5 bg-gradient-to-t from-black/80 to-transparent">
+              <p className="text-[#FAFAFA] text-[18px] md:text-[22px] font-semibold">Jegan Master</p>
+              <p className="text-[#d4d4d4] text-[12px] md:text-[14px]">Founder & Lead Dance Choreographer</p>
+            </div>
           </div>
           <div>
             <div className="section-label">Dance Master & Academy Intro</div>
@@ -168,7 +172,7 @@ export default function Home() {
         <div className="max-w-[1300px] mx-auto">
           <div className="section-label">Industry Contacts</div>
           <h2 className="text-3xl md:text-5xl mb-7">Network That Supports Career Growth</h2>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-start">
             <div className="relative min-h-[420px] md:min-h-[560px] lg:min-h-[680px] rounded-2xl overflow-hidden border border-[#c9a84c40] interactive-lift bg-[#0d0d0d]">
               <Image
                 src="/images/celebrities/with prabhu deva.jpeg"
@@ -183,24 +187,37 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="grid grid-rows-[1fr_auto] gap-5">
-              <div className="relative min-h-[260px] md:min-h-[330px] rounded-2xl overflow-hidden border border-[#c9a84c40] interactive-lift bg-[#0d0d0d]">
-                <Image
-                  src="/images/celebrities/with celebrity two.jpeg"
-                  alt="Step Up Dance Academy celebrity industry network"
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 50vw"
-                  className="object-contain object-top"
-                />
+            <div className="flex flex-col gap-5 lg:h-[680px]">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-[#c9a84c40] interactive-lift bg-[#0d0d0d]">
+                  <Image
+                    src="/images/celebrities/with celebrity five.jpeg"
+                    alt="Step Up Dance Academy with celebrity five"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 24vw"
+                    className="object-cover object-top"
+                  />
+                </div>
+                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-[#c9a84c40] interactive-lift bg-[#0d0d0d]">
+                  <Image
+                    src="/images/celebrities/with celebrity six.jpeg"
+                    alt="Step Up Dance Academy with celebrity six"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 24vw"
+                    className="object-cover object-top"
+                  />
+                </div>
               </div>
-              <div className="grid grid-cols-1 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 auto-rows-fr">
                 {[
                   'Direct exposure to renowned choreographers and dance industry mentors',
                   'Performance opportunities through cultural events and professional stage programs',
                   'Career-focused academy network to support student growth beyond classroom training',
+                  'Portfolio guidance with stage photos, rehearsal clips, and live showcase documentation',
+                  'Mentorship support for dance auditions, media projects, and advanced choreography careers',
                 ].map((item) => (
-                  <div key={item} className="gold-card !p-5 interactive-lift">
-                    <p className="text-[#e7e7e7] text-[15px] leading-[1.75]">{item}</p>
+                  <div key={item} className="gold-card !p-4 min-h-[82px] h-full flex items-center interactive-lift">
+                    <p className="text-[#e7e7e7] text-[14px] leading-[1.55]">{item}</p>
                   </div>
                 ))}
               </div>
@@ -297,11 +314,11 @@ export default function Home() {
             <p className="text-[#c8c8c8] leading-[1.9] mb-6">
               KSP Complex, Opposite Thiyagaraja Nagar, Opposite E B Office, Sivanthi Patti Road, Sivanthipatti, Tirunelveli-627011, Tamil Nadu
             </p>
-            <p className="text-[#e5e5e5] mb-2">Phone: +91 6383788537</p>
+            <p className="text-[#e5e5e5] mb-2">Phone: +91 99521 62600</p>
             <p className="text-[#e5e5e5] mb-3">Email: info@stepupdanceacademy.com</p>
             <p className="text-[#25D366] font-medium mb-8">WhatsApp us directly for admissions and class timings.</p>
             <a
-              href="https://wa.me/916383788537"
+              href="https://wa.me/919952162600"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-gold active:scale-95"
