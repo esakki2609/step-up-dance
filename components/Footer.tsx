@@ -39,10 +39,18 @@ export default function Footer() {
         <div>
           <h4 className="text-[#FAFAFA] font-bold tracking-[1px] uppercase text-[13px] mb-6">QUICK LINKS</h4>
           <ul className="space-y-3">
-            {['About', 'Programs', 'Certificates', 'Celebrities', 'Gallery', 'Join Now'].map(link => {
-              const href = link === 'Certificates' || link === 'Celebrities' 
-                ? `/${link.toLowerCase()}` 
-                : `/#${link.toLowerCase().replace(' ', '')}`
+            {['Intro', 'Industry Contacts', 'Curriculum', 'Certificates', 'Students', 'Get In Touch', 'FAQ', 'Contact'].map(link => {
+              const hrefMap: Record<string, string> = {
+                Intro: '/#academy-intro',
+                'Industry Contacts': '/#industry-contacts',
+                Curriculum: '/#curriculum',
+                Certificates: '/#certificates',
+                Students: '/#students-gallery',
+                'Get In Touch': '/#contact-page',
+                FAQ: '/#faq',
+                Contact: '/#contact-page',
+              }
+              const href = hrefMap[link]
               return (
                 <li key={link}>
                   <Link href={href} className="text-[#888] text-[14px] hover:text-[#C9A84C] transition-colors">
@@ -56,11 +64,11 @@ export default function Footer() {
 
         {/* Column 3 - Programs */}
         <div>
-          <h4 className="text-[#FAFAFA] font-bold tracking-[1px] uppercase text-[13px] mb-6">PROGRAMS</h4>
+          <h4 className="text-[#FAFAFA] font-bold tracking-[1px] uppercase text-[13px] mb-6">COURSE TRACKS</h4>
           <ul className="space-y-3">
-            {['Trendy Dance', 'Bollywood', 'Hip-Hop', 'Adult Classes', 'Commercial', 'Stage'].map(link => (
+            {['Foundation', 'Bollywood', 'Hip-Hop', 'Freestyle', 'Stage Training', 'Competition Prep'].map(link => (
               <li key={link}>
-                <Link href="#programs" className="text-[#888] text-[14px] hover:text-[#C9A84C] transition-colors">
+                <Link href="/#curriculum" className="text-[#888] text-[14px] hover:text-[#C9A84C] transition-colors">
                   {link}
                 </Link>
               </li>
@@ -74,20 +82,18 @@ export default function Footer() {
           <ul className="space-y-4">
             <li className="flex gap-3 text-[#888] text-[14px] leading-[1.6]">
               <span className="text-[#C9A84C]">📍</span>
-              {/* TODO: Add real address */}
-              <span>Step Up Dance Academy, Your City</span>
+              <span>Step Up Dance Academy<br/>KSP Complex, Opposite Thiyagaraja Nagar, Opposite E B Office,<br/>Sivanthi Patti Road, Sivanthipatti,<br/>Tirunelveli-627011, Tamil Nadu</span>
             </li>
             <li className="flex gap-3 text-[#888] text-[14px] leading-[1.6]">
               <span className="text-[#C9A84C]">📞</span>
-              {/* TODO: Add real phone */}
-              <span>+91 XXXXX XXXXX</span>
+              <span>+91 6383788537</span>
             </li>
             <li className="flex gap-3 text-[#888] text-[14px] leading-[1.6]">
               <span className="text-[#C9A84C]">📧</span>
               <span>info@stepupdanceacademy.com</span>
             </li>
             <li>
-              <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" className="text-[#25D366] text-[14px] font-medium hover:underline flex items-center gap-2 mt-2">
+              <a href="https://wa.me/916383788537" target="_blank" rel="noopener noreferrer" className="text-[#25D366] text-[14px] font-medium hover:underline flex items-center gap-2 mt-2">
                 WhatsApp Us
               </a>
             </li>

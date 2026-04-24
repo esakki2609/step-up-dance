@@ -27,12 +27,12 @@ export default function Navbar() {
   }, [])
 
   const navLinks = [
-    { name: 'About', href: '/#about' },
-    { name: 'Programs', href: '/#programs' },
-    { name: 'Certificates', href: '/certificates' },
-    { name: 'Celebrities', href: '/celebrities' },
-    { name: 'Gallery', href: '/#gallery' },
-    { name: 'Contact', href: '/#contact' },
+    { name: 'Intro', href: '/#academy-intro' },
+    { name: 'Curriculum', href: '/#curriculum' },
+    { name: 'Certificates', href: '/#certificates' },
+    { name: 'Students', href: '/#students-gallery' },
+    { name: 'FAQ', href: '/#faq' },
+    { name: 'Contact', href: '/#contact-page' },
   ]
 
   return (
@@ -77,9 +77,12 @@ export default function Navbar() {
 
         {/* Right: CTA & Mobile Toggle */}
         <div className="hidden lg:block">
-          <Link href="#join" className="btn-gold !px-6 !py-2.5">
+          <a
+            href="/#contact-page"
+            className="btn-gold !px-6 !py-2.5"
+          >
             Join Now
-          </Link>
+          </a>
         </div>
 
         {/* Mobile Hamburger */}
@@ -117,13 +120,13 @@ export default function Navbar() {
               </Link>
             ))}
             <div className="p-[5%] w-full">
-              <Link
-                href="#join"
+              <a
+                href="/#contact-page"
                 className="btn-gold w-full text-center block"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Join Now
-              </Link>
+              </a>
             </div>
           </motion.div>
         )}
