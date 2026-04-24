@@ -31,7 +31,7 @@ export default function Hero() {
         />
 
         {/* Layer 2: Linear Gradient */}
-        <div 
+        <div
           className="absolute inset-0"
           style={{
             background: 'linear-gradient(to bottom, rgba(10,10,10,0.5) 0%, rgba(10,10,10,0.7) 50%, rgba(10,10,10,0.95) 100%)'
@@ -39,7 +39,7 @@ export default function Hero() {
         />
 
         {/* Layer 3: Radial Gradient */}
-        <div 
+        <div
           className="absolute inset-0"
           style={{
             background: 'radial-gradient(ellipse at 50% 100%, rgba(201,168,76,0.12) 0%, transparent 70%)'

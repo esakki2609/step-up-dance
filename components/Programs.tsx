@@ -45,7 +45,7 @@ export default function Programs() {
   const programs = activeTab === 'children' ? childrenPrograms : adultPrograms
 
   return (
-    <section id="programs" className="bg-[#0A0A0A] pt-12 pb-16 px-6 md:px-10 lg:px-[5%] overflow-hidden">
+    <section id="programs" className="bg-[#0A0A0A] pt-8 pb-6 px-6 md:px-10 lg:px-[5%] overflow-hidden">
       <div className="w-full max-w-[1300px] mx-auto">
         <div className="text-center mb-8">
           <div className="section-label text-center mb-2">OUR CURRICULUM</div>

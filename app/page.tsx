@@ -22,9 +22,9 @@ export default function Home() {
       <About />
       <Trainer />
       <Programs />
-      <WhyUs />
-      <Students />
       <Achievements />
+      <Students />
+      <WhyUs />
       <Gallery />
       <Testimonials />
       <FAQ />

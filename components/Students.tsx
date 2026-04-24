@@ -1,72 +1,75 @@
 'use client'
 
 import { motion } from 'framer-motion'
-
-/*
- * IMAGE REPLACEMENT GUIDE:
- * When real images are ready, place them in /public/images/ and 
- * replace the placeholder src with:
- *
- * Student 1: /images/student-1.jpg
- * Student 2: /images/student-2.jpg
- * Student 3: /images/student-3.jpg
- * Student 4: /images/student-4.jpg
- * Student 5: /images/student-5.jpg
- *
- * Switch <img> tags to <Image> from next/image after adding real files.
- */
+import Image from 'next/image'
 
 export default function Students() {
   const students = [
-    { label: 'Rising Star', sub: 'Passion Ignited', src: '/images/students/students dance two.jpeg' },
-    { label: 'Stage Ready', sub: 'Born to Perform', src: '/images/students/students dance three.jpeg' },
-    { label: 'Confident', sub: 'Finding the Beat', src: '/images/students/students dance four.jpeg' },
-    { label: 'Excellence', sub: 'Every Step Counts', src: '/images/students/students dance five.jpeg' },
-    { label: 'Future Star', sub: 'Just Getting Started', src: '/images/students/with students two.jpeg' },
-    { label: 'Spotlight', sub: 'Owning The Stage', src: '/images/students/students dance six.jpeg' }
+    { src: '/images/students/with students certificates one.jpeg', alt: 'Student proudly receiving Step Up Dance certification' },
+    { src: '/images/students/adult dance one.jpeg', alt: 'Adult dance training session at Step Up Academy' },
+    { src: '/images/students/students dance five.jpeg', alt: 'Energetic student dance performance' },
+    { src: '/images/students/with students certificates two.jpeg', alt: 'Proud student holding professional dance certificate' },
+    { src: '/images/students/students dance four.jpeg', alt: 'Students mastering new dance choreography' },
+    { src: '/images/students/with junior studens pic.jpeg', alt: 'Dance master with junior academy students' },
+    { src: '/images/students/students dance six.jpeg', alt: 'Dance academy students performing on stage' },
+    { src: '/images/students/with students one.jpeg', alt: 'Dance master posing with graduating students' },
+    { src: '/images/students/students dance three.jpeg', alt: 'Group dance training in session' },
+    { src: '/images/students/with students pics.jpeg', alt: 'Step Up Dance studio group picture' },
+    { src: '/images/students/students dance two.jpeg', alt: 'Professional dance practice session' },
+    { src: '/images/students/with students three.jpeg', alt: 'Students smiling after a rigorous dance class' },
+    { src: '/images/students/students danceone.jpeg', alt: 'Live dance class in action' },
+    { src: '/images/students/with students two.jpeg', alt: 'Happy dance students posing together' },
+    { src: '/images/students/with students.jpeg', alt: 'Step up dance academy student community' },
   ]
 
   return (
-    <section id="students" className="bg-[#0F0F0F] py-16 px-6 md:py-20 md:px-10 lg:py-28 lg:px-[5%]">
+    <section id="students" className="bg-[#050505] py-16 px-6 md:py-20 md:px-10 lg:py-28 lg:px-[5%] border-t border-[#1a1a1a]">
       <div className="max-w-[1400px] mx-auto text-center mb-12">
-        <div className="section-label">OUR STARS</div>
-        <h2 className="text-3xl md:text-4xl lg:text-5xl">
-          Where Students <em className="gold-text not-italic">Become Stars</em>
-        </h2>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          <div className="section-label mb-2">OUR STARS</div>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-['Playfair_Display'] mb-4">
+            Where Passion <em className="gold-text not-italic">Meets Success</em>
+          </h2>
+          <p className="text-[#888] max-w-2xl mx-auto text-[14px] md:text-[15px] leading-[1.6]">
+            Take a look at our vibrant community. From high-energy studio practices to proud certification moments, our students represent the heart and soul of Step Up Dance Academy.
+          </p>
+        </motion.div>
       </div>
 
-      <div className="max-w-[1400px] mx-auto flex overflow-x-auto gap-6 snap-x snap-mandatory hide-scrollbar pb-8 pt-4 md:grid md:grid-cols-3 lg:grid-cols-3">
+      <div className="max-w-[1400px] mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-5">
         {students.map((student, i) => (
           <motion.div
             key={i}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: i * 0.1 }}
-            className="flex-shrink-0 w-[85vw] sm:w-[60vw] md:w-auto group relative overflow-hidden rounded-[16px] aspect-[3/4] cursor-pointer snap-center"
+            transition={{ duration: 0.5, delay: (i % 5) * 0.1 }}
+            className="group relative overflow-hidden rounded-[12px] md:rounded-[16px] aspect-square cursor-pointer bg-[#111]"
           >
-            <img
+            <Image
               src={student.src}
-              alt={`Student ${i}`}
-              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-108 group-hover:border-2 group-hover:border-[#c9a84c80]"
+              alt={student.alt}
+              fill
+              sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 20vw"
+              className="object-cover transition-all duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100"
             />
             
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0af2] to-transparent bg-[length:100%_55%] bg-bottom bg-no-repeat flex flex-col justify-end p-4 transition-all duration-300">
-              <h3 className="text-[#C9A84C] text-[12px] tracking-[2px] uppercase font-bold mb-1">
-                {student.label}
-              </h3>
-              <p className="text-[rgba(250,250,250,0.6)] text-[11px]">
-                {student.sub}
-              </p>
+            {/* Elegant Hover Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4 border border-transparent group-hover:border-[#c9a84c40] rounded-[12px] md:rounded-[16px]">
+               <div className="w-8 h-8 rounded-full bg-[#C9A84C] text-black flex items-center justify-center translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ml-auto">
+                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                 </svg>
+               </div>
             </div>
           </motion.div>
         ))}
       </div>
-      <style dangerouslySetInnerHTML={{__html: `
-        .hide-scrollbar::-webkit-scrollbar {
-          display: none;
-        }
-      `}} />
     </section>
   )
 }
