@@ -17,6 +17,8 @@ import { motion, AnimatePresence } from 'framer-motion'
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [cursor, setCursor] = useState({ x: 0, y: 0 })
+  const [showCursorFx, setShowCursorFx] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,6 +26,24 @@ export default function Navbar() {
     }
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  useEffect(() => {
+    const handleMouseMove = (event: MouseEvent) => {
+      setCursor({ x: event.clientX, y: event.clientY })
+      setShowCursorFx(true)
+    }
+
+    const handleMouseLeave = () => {
+      setShowCursorFx(false)
+    }
+
+    window.addEventListener('mousemove', handleMouseMove)
+    window.addEventListener('mouseout', handleMouseLeave)
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove)
+      window.removeEventListener('mouseout', handleMouseLeave)
+    }
   }, [])
 
   const navLinks = [
@@ -43,21 +63,35 @@ export default function Navbar() {
           : 'bg-transparent py-6 px-[5%]'
       } px-[5%]`}
     >
+      <motion.div
+        className="pointer-events-none fixed left-0 top-0 z-[60] hidden md:block h-4 w-4 rounded-full bg-[#25D366]/70 blur-[1px]"
+        animate={{ x: cursor.x - 8, y: cursor.y - 8, opacity: showCursorFx ? 1 : 0 }}
+        transition={{ type: 'spring', stiffness: 380, damping: 28, mass: 0.35 }}
+      />
+      <motion.div
+        className="pointer-events-none fixed left-0 top-0 z-[59] hidden md:block h-20 w-20 rounded-full bg-[#C9A84C]/20 blur-2xl"
+        animate={{ x: cursor.x - 40, y: cursor.y - 40, opacity: showCursorFx ? 0.85 : 0 }}
+        transition={{ type: 'spring', stiffness: 120, damping: 22, mass: 0.7 }}
+      />
+
       <div className="flex items-center justify-between">
         {/* Left: Logo */}
         <Link href="/" className="flex items-center">
-          <motion.img 
-            src="/images/logo/step-up-dance-logo.jpeg" 
-            className="h-[70px] w-[70px] object-cover rounded-full mix-blend-screen" 
+          <motion.img
+            src="/images/logo/step-up-dance-logo.jpeg"
+            className="h-[70px] w-[70px] object-cover rounded-full mix-blend-screen logo-float"
             style={{ filter: 'brightness(1.2) contrast(1.2)' }}
-            alt="Step Up Dance Academy Logo" 
-            animate={{ 
-              rotate: 360,
-              boxShadow: ['0px 0px 0px rgba(37,211,102,0)', '0px 0px 20px rgba(37,211,102,0.5)', '0px 0px 0px rgba(37,211,102,0)']
+            alt="Step Up Dance Academy Logo"
+            animate={{
+              y: [0, -3, 0],
+              boxShadow: ['0px 0px 0px rgba(37,211,102,0)', '0px 0px 18px rgba(37,211,102,0.45)', '0px 0px 0px rgba(37,211,102,0)'],
             }}
-            transition={{ 
-              rotate: { duration: 10, repeat: Infinity, ease: "linear" },
-              boxShadow: { duration: 3, repeat: Infinity, ease: "easeInOut" }
+            whileHover={{ scale: 1.08, rotate: -4 }}
+            transition={{
+              y: { duration: 2.2, repeat: Infinity, ease: 'easeInOut' },
+              boxShadow: { duration: 3, repeat: Infinity, ease: 'easeInOut' },
+              scale: { duration: 0.2 },
+              rotate: { duration: 0.2 },
             }}
           />
         </Link>
@@ -68,7 +102,7 @@ export default function Navbar() {
             <Link
               key={link.name}
               href={link.href}
-              className="text-[#FAFAFA] text-[13px] font-medium tracking-[1.5px] uppercase hover:text-[#C9A84C] transition-colors duration-300"
+              className="text-[#FAFAFA] text-[13px] font-medium tracking-[1.5px] uppercase hover:text-[#C9A84C] transition-colors duration-300 nav-link-animated"
             >
               {link.name}
             </Link>

@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import RevealSection from '@/components/RevealSection'
 import ContactWhatsAppForm from '@/components/ContactWhatsAppForm'
+import StudentsTabsGallery from '@/components/StudentsTabsGallery'
 
 export const metadata: Metadata = {
   title: 'Step Up Dance Academy | Professional Dance Training in Tirunelveli',
@@ -25,12 +26,36 @@ export const metadata: Metadata = {
 
 export default function Home() {
   const curriculum = [
-    'Foundation, rhythm, posture, and body alignment',
-    'Bollywood, hip-hop, freestyle, and fusion choreography',
-    'Stage performance skills and team synchronization',
-    'Competition and event preparation with rehearsal plans',
-    'Music interpretation, confidence, and expressive movement',
-    'Assessment-based progression for long-term growth',
+    {
+      title: 'Foundation, Rhythm, And Posture Training',
+      description:
+        'Our professional dance curriculum in Tirunelveli builds core rhythm control, posture alignment, and movement basics for kids and adult beginners.',
+    },
+    {
+      title: 'Bollywood, Hip-Hop, And Freestyle Choreography',
+      description:
+        'Students learn industry-relevant Bollywood dance, hip-hop choreography, and freestyle combinations through structured weekly dance classes.',
+    },
+    {
+      title: 'Stage Performance And Team Synchronization',
+      description:
+        'Performance-focused dance coaching improves coordination, group synchronization, and stage confidence for school events and live shows.',
+    },
+    {
+      title: 'Competition And Event Preparation Program',
+      description:
+        'We provide competition dance training with rehearsal planning, routine polishing, and presentation strategy for academy and interschool events.',
+    },
+    {
+      title: 'Musicality, Expression, And Confidence Building',
+      description:
+        'This module strengthens musical interpretation, expressive performance quality, and confidence development for complete dance personality growth.',
+    },
+    {
+      title: 'Assessment-Based Progression And Certification Path',
+      description:
+        'Our level-based dance program tracks student progress with regular assessment, milestone reviews, and certification-oriented training outcomes.',
+    },
   ]
 
   const faqItems = [
@@ -54,13 +79,6 @@ export default function Home() {
       answer:
         'Absolutely. We regularly prepare students for stage performances, cultural events, and competition-level presentations.',
     },
-  ]
-
-  const studentDanceImages = [
-    '/images/students/students dance five.jpeg',
-    '/images/students/students dance four.jpeg',
-    '/images/students/students dance six.jpeg',
-    '/images/students/students dance three.jpeg',
   ]
 
   const certificates = [
@@ -150,16 +168,43 @@ export default function Home() {
         <div className="max-w-[1300px] mx-auto">
           <div className="section-label">Industry Contacts</div>
           <h2 className="text-3xl md:text-5xl mb-7">Network That Supports Career Growth</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-            {[
-              'Choreographers and performance directors',
-              'Event and cultural show organizers',
-              'Studio collaborators and talent coordinators',
-            ].map((item) => (
-              <div key={item} className="gold-card !p-6 interactive-lift">
-                <p className="text-[#e7e7e7] text-[16px] leading-[1.8]">{item}</p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+            <div className="relative min-h-[420px] md:min-h-[560px] lg:min-h-[680px] rounded-2xl overflow-hidden border border-[#c9a84c40] interactive-lift bg-[#0d0d0d]">
+              <Image
+                src="/images/celebrities/with prabhu deva.jpeg"
+                alt="Step Up Dance Academy with Prabhu Deva"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-contain object-top"
+              />
+              <div className="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-black/80 to-transparent">
+                <p className="text-[#f5f5f5] text-[17px] font-semibold">Industry Collaboration Highlight</p>
+                <p className="text-[#d2d2d2] text-[14px] mt-1">Recognized moments with Prabhu Deva and leading dance personalities.</p>
               </div>
-            ))}
+            </div>
+
+            <div className="grid grid-rows-[1fr_auto] gap-5">
+              <div className="relative min-h-[260px] md:min-h-[330px] rounded-2xl overflow-hidden border border-[#c9a84c40] interactive-lift bg-[#0d0d0d]">
+                <Image
+                  src="/images/celebrities/with celebrity two.jpeg"
+                  alt="Step Up Dance Academy celebrity industry network"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-contain object-top"
+                />
+              </div>
+              <div className="grid grid-cols-1 gap-4">
+                {[
+                  'Direct exposure to renowned choreographers and dance industry mentors',
+                  'Performance opportunities through cultural events and professional stage programs',
+                  'Career-focused academy network to support student growth beyond classroom training',
+                ].map((item) => (
+                  <div key={item} className="gold-card !p-5 interactive-lift">
+                    <p className="text-[#e7e7e7] text-[15px] leading-[1.75]">{item}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </RevealSection>
@@ -170,8 +215,9 @@ export default function Home() {
           <h2 className="text-3xl md:text-5xl mb-7">Structured Dance Curriculum For Every Level</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {curriculum.map((item) => (
-              <div key={item} className="border border-[#c9a84c26] rounded-xl p-5 bg-[#121212] interactive-lift">
-                <p className="text-[#d5d5d5] leading-[1.8]">{item}</p>
+              <div key={item.title} className="border border-[#c9a84c26] rounded-xl p-5 bg-[#121212] interactive-lift">
+                <h3 className="text-[20px] text-[#f2f2f2] font-semibold mb-2">{item.title}</h3>
+                <p className="text-[#c7c7c7] text-[14px] leading-[1.8]">{item.description}</p>
               </div>
             ))}
           </div>
@@ -219,38 +265,12 @@ export default function Home() {
 
       <RevealSection id="students-gallery" className="py-8 md:py-10 px-6 lg:px-[6%] mixed-theme-section scroll-mt-24">
         <div className="max-w-[1300px] mx-auto">
-          <div className="section-label">Students Dance & Certificate Images</div>
-          <h2 className="text-3xl md:text-5xl mb-7">Student Performance Moments</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-5">
-            {studentDanceImages.map((src, index) => (
-              <div key={src} className="relative h-[300px] rounded-xl overflow-hidden border border-[#c9a84c33] interactive-lift">
-                <Image
-                  src={src}
-                  alt={`Students dance training ${index + 1}`}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            ))}
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <div className="relative h-[320px] rounded-xl overflow-hidden border border-[#c9a84c33] interactive-lift">
-              <Image
-                src="/images/students/with students certificates one.jpeg"
-                alt="Students with certificates at Step Up Dance Academy"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative h-[320px] rounded-xl overflow-hidden border border-[#c9a84c33] interactive-lift">
-              <Image
-                src="/images/students/with students certificates two.jpeg"
-                alt="Students receiving dance certificates"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
+          <div className="section-label">Students Dance Gallery</div>
+          <h2 className="text-3xl md:text-5xl mb-3">Kids And Adult Student Highlights</h2>
+          <p className="text-[#bcbcbc] mb-6 leading-[1.8] max-w-[860px]">
+            Explore our full student gallery in separate Kids and Adult tabs. Every image includes a search-friendly description for better visibility of our dance training programs.
+          </p>
+          <StudentsTabsGallery />
         </div>
       </RevealSection>
 

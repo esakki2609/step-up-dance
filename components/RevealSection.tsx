@@ -14,10 +14,10 @@ export default function RevealSection({ id, className = '', children }: RevealSe
     <motion.section
       id={id}
       className={className}
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 38, scale: 0.985 }}
+      whileInView={{ opacity: 1, y: 0, scale: 1 }}
       viewport={{ once: true, amount: 0.2 }}
-      transition={{ duration: 0.6, ease: 'easeOut' }}
+      transition={{ duration: 0.65, ease: 'easeOut' }}
     >
       {children}
     </motion.section>

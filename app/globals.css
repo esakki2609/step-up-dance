@@ -129,3 +129,44 @@ h1, h2, h3, h4 {
     radial-gradient(900px 420px at 90% 10%, rgba(201, 168, 76, 0.1), transparent 55%),
     radial-gradient(700px 350px at 50% 100%, rgba(238, 140, 60, 0.08), transparent 60%);
 }
+
+.logo-float {
+  animation: logoFloat 2.4s ease-in-out infinite;
+}
+
+.nav-link-animated {
+  position: relative;
+}
+
+.nav-link-animated::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #c9a84c, #25d366);
+  transition: width 0.28s ease;
+}
+
+.nav-link-animated:hover::after {
+  width: 100%;
+}
+
+.mixed-theme-section .gold-card,
+.mixed-theme-section details,
+.mixed-theme-section .interactive-lift {
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.mixed-theme-section .gold-card:hover,
+.mixed-theme-section details:hover,
+.mixed-theme-section .interactive-lift:hover {
+  border-color: rgba(37, 211, 102, 0.45);
+  box-shadow: 0 16px 44px rgba(37, 211, 102, 0.12), 0 8px 24px rgba(201, 168, 76, 0.16);
+}
+
+@keyframes logoFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-4px); }
+}
