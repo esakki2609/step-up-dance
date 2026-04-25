@@ -26,7 +26,7 @@ export default function About() {
         >
           <div className="section-label">THE ACADEMY & THE MASTER</div>
           <div className="gold-divider"></div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl mb-4 font-['Playfair_Display']">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl mb-4 font-['Cinzel']">
             Train with an Expert <em className="gold-text not-italic">Dance Master</em>
           </h2>
           <p className="text-[#888] text-[15px] lg:text-[17px] leading-[1.6] mb-4">
@@ -64,7 +64,7 @@ export default function About() {
               className="w-full h-auto object-cover transform group-hover:scale-[1.03] transition-transform duration-700"
             />
             <div className="absolute bottom-6 left-6 z-20">
-              <div className="text-white font-['Playfair_Display'] text-2xl font-bold drop-shadow-lg">The Dance Master</div>
+              <div className="text-white font-['Cinzel'] text-2xl font-bold drop-shadow-lg">The Dance Master</div>
               <div className="text-[#C9A84C] text-sm tracking-widest uppercase font-bold mt-1">Lead Choreographer</div>
             </div>
           </div>

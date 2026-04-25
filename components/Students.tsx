@@ -32,7 +32,7 @@ export default function Students() {
           transition={{ duration: 0.5 }}
         >
           <div className="section-label mb-2">OUR STARS</div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-['Playfair_Display'] mb-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-['Cinzel'] mb-4">
             Where Passion <em className="gold-text not-italic">Meets Success</em>
           </h2>
           <p className="text-[#888] max-w-2xl mx-auto text-[14px] md:text-[15px] leading-[1.6]">

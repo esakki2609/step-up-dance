@@ -84,7 +84,7 @@ export default function Home() {
   const certificates = [
     { src: '/images/certificates/legend-certificate.jpeg', title: 'The Little Legends Certificate', year: 2025 },
     { src: '/images/certificates/breaking international certificate.jpeg', title: 'Breaking International Certificate', year: 2024 },
-    { src: '/images/certificates/dance done certificate.jpeg', title: 'Dance Done Certificate', year: 2024 },
+    { src: '/images/certificates/dance done certificate.jpeg', title: 'Dance Don Certificate', year: 2024 },
     { src: '/images/certificates/international pride certificate (2).jpeg', title: 'International Pride Certificate', year: 2024 },
     { src: '/images/certificates/world-record-certificate.jpeg', title: 'World Record Certificate', year: 2023 },
     { src: '/images/certificates/with certificate.jpeg', title: 'Performance Recognition Certificate', year: 2023 },
@@ -111,17 +111,17 @@ export default function Home() {
             className="object-cover object-[50%_28%] md:object-center"
             style={{ filter: 'brightness(1.16) contrast(1.08) saturate(1.08)' }}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/8 via-black/35 to-[#0A0A0A]/70" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/35 via-black/58 to-[#0A0A0A]/82" />
         </div>
 
-        <div className="relative z-10 px-6 lg:px-[8%] max-w-[780px]">
+        <div className="relative z-10 px-6 lg:px-[8%] max-w-[780px] py-5 rounded-2xl bg-black/28 md:bg-transparent backdrop-blur-[2px] md:backdrop-blur-0">
           <span className="inline-block bg-[#c9a84c1a] border border-[#c9a84c59] text-[#C9A84C] text-[10px] tracking-[4px] py-[6px] px-[16px] rounded-[50px] mb-5 uppercase">
             Professional Dance Academy
           </span>
-          <h1 className="text-[clamp(42px,6vw,74px)] font-black leading-[1.1] mb-5">
+          <h1 className="text-[clamp(42px,6vw,74px)] font-black leading-[1.1] mb-5 text-white [text-shadow:0_3px_14px_rgba(0,0,0,0.65)]">
             Master Dance With Structured Training And Stage Confidence
           </h1>
-          <p className="text-[15px] md:text-[17px] text-[#dddddd] leading-[1.8] max-w-[620px] mb-7">
+          <p className="text-[15px] md:text-[17px] text-[#f0f0f0] leading-[1.8] max-w-[620px] mb-7 [text-shadow:0_2px_10px_rgba(0,0,0,0.65)]">
             Step Up Dance Academy delivers curriculum-led dance education, performance training, and certification-focused guidance for children and adults who want professional growth.
           </p>
           <div className="flex flex-wrap gap-4">

@@ -35,8 +35,8 @@ export default function CelebritySection() {
           transition={{ duration: 0.8 }}
         >
           <div className="section-label mb-6">INDUSTRY RECOGNITION</div>
-          <div className="text-[100px] text-[#c9a84c26] font-['Playfair_Display'] leading-[0.5] -mb-4">"</div>
-          <h2 className="font-['Playfair_Display'] italic text-[22px] md:text-[28px] lg:text-[36px] text-[#FAFAFA] leading-[1.6]">
+          <div className="text-[100px] text-[#c9a84c26] font-['Cinzel'] leading-[0.5] -mb-4">"</div>
+          <h2 className="font-['Cinzel'] italic text-[22px] md:text-[28px] lg:text-[36px] text-[#FAFAFA] leading-[1.6]">
             Excellence is not a destination — it is a continuous journey. Step Up walks that journey every single day.
           </h2>
           <div className="mt-8">

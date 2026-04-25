@@ -49,7 +49,7 @@ export default function Programs() {
       <div className="w-full max-w-[1300px] mx-auto">
         <div className="text-center mb-8">
           <div className="section-label text-center mb-2">OUR CURRICULUM</div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl mb-6 font-['Playfair_Display']">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl mb-6 font-['Cinzel']">
             Find Your <em className="gold-text not-italic">Rhythm</em>
           </h2>
           
@@ -125,7 +125,7 @@ export default function Programs() {
                     />
                   )}
                   <div className="flex flex-col pr-6 relative">
-                    <h3 className={`text-xl md:text-2xl lg:text-3xl font-['Playfair_Display'] transition-colors duration-300 ${
+                    <h3 className={`text-xl md:text-2xl lg:text-3xl font-['Cinzel'] transition-colors duration-300 ${
                       hoveredIndex === i ? 'text-[#C9A84C]' : 'text-[#FAFAFA]'
                     }`}>
                       {prog.title}
@@ -170,7 +170,7 @@ export default function Programs() {
                   {programs[hoveredIndex]?.age}
                 </div>
                 
-                <h3 className="text-3xl md:text-4xl lg:text-5xl font-['Playfair_Display'] text-white mb-6 leading-tight">
+                <h3 className="text-3xl md:text-4xl lg:text-5xl font-['Cinzel'] text-white mb-6 leading-tight">
                   {programs[hoveredIndex]?.title}
                 </h3>
                 
@@ -219,7 +219,7 @@ export default function Programs() {
               <div className="text-[11px] text-[#C9A84C] tracking-[3px] uppercase mb-4 font-bold">
                 {selectedProgram.age}
               </div>
-              <h3 className="text-3xl md:text-4xl font-['Playfair_Display'] text-white mb-6">
+              <h3 className="text-3xl md:text-4xl font-['Cinzel'] text-white mb-6">
                 {selectedProgram.title}
               </h3>
               <p className="text-[#888] text-[16px] leading-[1.7] mb-10">

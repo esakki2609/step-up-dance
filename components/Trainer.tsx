@@ -43,7 +43,7 @@ export default function Trainer() {
           className="w-full lg:w-1/2"
         >
           <div className="section-label">CELEBRITY MENTORSHIP</div>
-          <h2 className="text-3xl md:text-4xl lg:text-[clamp(36px,4vw,48px)] mb-3 font-['Playfair_Display']">
+          <h2 className="text-3xl md:text-4xl lg:text-[clamp(36px,4vw,48px)] mb-3 font-['Cinzel']">
             Train with <em className="gold-text not-italic">Industry Icons</em>
           </h2>
           <p className="text-[#888] text-[14px] lg:text-[16px] leading-[1.6] mb-3">

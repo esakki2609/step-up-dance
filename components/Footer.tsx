@@ -16,8 +16,8 @@ export default function Footer() {
       <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         {/* Column 1 - Brand */}
         <div>
-            <div className="mb-6">
-              <img src="/images/logo/step-up-dance-logo.jpeg" className="h-[70px] w-[70px] object-cover rounded-full mix-blend-screen" style={{ filter: 'brightness(1.2) contrast(1.2)' }} alt="Step Up Dance Academy Logo" />
+            <div className="mb-6 logo-3d-wrap logo-spin">
+              <img src="/images/logo/step-up-dance-logo.jpeg" className="h-[70px] w-[70px] object-cover rounded-full mix-blend-screen logo-3d" alt="Step Up Dance Academy Logo" />
             </div>
           <p className="text-[#888] text-[14px] leading-[1.6] mb-6">
             Train with Passion. Perform with Pride. Shine.

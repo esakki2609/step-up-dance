@@ -76,20 +76,17 @@ export default function Navbar() {
 
       <div className="flex items-center justify-between">
         {/* Left: Logo */}
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="flex items-center logo-3d-wrap logo-spin">
           <motion.img
             src="/images/logo/step-up-dance-logo.jpeg"
-            className="h-[70px] w-[70px] object-cover rounded-full mix-blend-screen logo-float"
-            style={{ filter: 'brightness(1.2) contrast(1.2)' }}
+            className="h-[70px] w-[70px] object-cover rounded-full mix-blend-screen logo-float logo-3d"
             alt="Step Up Dance Academy Logo"
             animate={{
               y: [0, -3, 0],
-              boxShadow: ['0px 0px 0px rgba(37,211,102,0)', '0px 0px 18px rgba(37,211,102,0.45)', '0px 0px 0px rgba(37,211,102,0)'],
             }}
             whileHover={{ scale: 1.08, rotate: -4 }}
             transition={{
               y: { duration: 2.2, repeat: Infinity, ease: 'easeInOut' },
-              boxShadow: { duration: 3, repeat: Infinity, ease: 'easeInOut' },
               scale: { duration: 0.2 },
               rotate: { duration: 0.2 },
             }}

@@ -58,7 +58,7 @@ export default function Hero() {
             ✦ AWARD WINNING DANCE ACADEMY ✦
           </span>
 
-          <h1 className="font-['Playfair_Display'] text-[clamp(48px,6vw,80px)] font-black leading-[1.1] mb-4">
+          <h1 className="font-['Cinzel'] text-[clamp(48px,6vw,80px)] font-black leading-[1.1] mb-4">
             <span className="text-[#FAFAFA] block">STEP INTO</span>
             <span className="gold-text italic block">THE SPOTLIGHT</span>
           </h1>

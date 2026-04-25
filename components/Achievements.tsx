@@ -12,7 +12,7 @@ export default function Achievements() {
     { year: '2018', title: 'Foundational Excellence', img: '/images/certificates/ceritificate-one.jpeg', seo: 'Professional dance excellence certificate' },
     { year: '2019', title: 'Street Dance Championship', img: '/images/certificates/street dance certificate.jpeg', seo: 'Street dance championship recognition' },
     { year: '2020', title: 'International Breaking', img: '/images/certificates/breaking international certificate.jpeg', seo: 'International break dancing certificate' },
-    { year: '2021', title: 'Mastery in Choreography', img: '/images/certificates/dance done certificate.jpeg', seo: 'Mastery in dance choreography certification' },
+    { year: '2024', title: 'Dance Don Certificate', img: '/images/certificates/dance done certificate.jpeg', seo: 'Dance don certificate recognition for Step Up Dance Academy' },
     { year: '2022', title: 'Pride Recognition', img: '/images/certificates/international pride certificate.jpeg', seo: 'International pride dance recognition' },
     { year: '2022', title: 'Global Achievement', img: '/images/certificates/international pride certificate (2).jpeg', seo: 'Global dance achievement certificate' },
     { year: '2023', title: 'Pride of Tamilnadu', img: '/images/certificates/pride of tamilnadu certificate.jpeg', seo: 'Pride of Tamilnadu dance award' },
@@ -45,7 +45,7 @@ export default function Achievements() {
             transition={{ duration: 0.6 }}
           >
             <div className="section-label mb-2">OUR JOURNEY</div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-['Playfair_Display']">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-['Cinzel']">
               A Legacy of <em className="gold-text not-italic">Excellence</em>
             </h2>
             <p className="text-[#888] mt-2 max-w-xl text-[14px] leading-[1.5]">
@@ -58,7 +58,7 @@ export default function Achievements() {
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="flex gap-4 hidden md:flex"
+            className="hidden gap-4 md:flex"
           >
             <button 
               onClick={() => scroll('left')}
@@ -111,7 +111,7 @@ export default function Achievements() {
                 </div>
 
                 <div className="text-[#C9A84C] font-bold tracking-[2px] text-[15px] mb-1">{cert.year}</div>
-                <h3 className="text-white text-lg md:text-xl font-['Playfair_Display'] mb-4 min-h-[56px] line-clamp-2 pr-4 transition-colors group-hover:text-[#FAFAFA]">{cert.title}</h3>
+                <h3 className="text-white text-lg md:text-xl font-['Cinzel'] mb-4 min-h-[56px] line-clamp-2 pr-4 transition-colors group-hover:text-[#FAFAFA]">{cert.title}</h3>
                 
                 {/* Certificate Image Frame */}
                 <div className="relative aspect-[3/2] w-full rounded-[12px] overflow-hidden border border-[#c9a84c30] group-hover:border-[#C9A84C] transition-all duration-500 shadow-xl group-hover:shadow-[0_10px_40px_rgba(201,168,76,0.15)] group-hover:-translate-y-1 bg-[#111]">
